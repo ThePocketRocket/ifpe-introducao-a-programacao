@@ -17,10 +17,10 @@ sindicato = salario_bruto * 0.03
 salario_liquido = salario_bruto - ir - inss - sindicato
 descontos = salario_bruto - salario_liquido
 
-print(f'''Salário bruto : {salario_bruto}
-(-) IR : {ir}
-(-) INSS (10%) : {inss}
-(-) Sindicato (3%): {sindicato}
-FGTS (11%): {fgts}
-Total de descontos: {descontos}
-Salário Líquido: {salario_liquido}''')
+print(f'''Salário bruto     : R${salario_bruto:.2f}
+(-) IR            : R${ir:.2f}
+(-) INSS (10%)    : R${inss:.2f}
+(-) Sindicato (3%): R${sindicato:.2f}
+FGTS (11%)        : R${fgts:.2f}
+Total de descontos: R${descontos:.2f}
+Salário Líquido   : R${salario_liquido:.2f}''')
