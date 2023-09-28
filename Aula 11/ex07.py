@@ -1,6 +1,6 @@
-data = input('Digite a data: ').replace(' ', '')
+data = input('Digite a data: ')
 
-mes = data[3] + data[4]
+mes = data[3:5]
 match mes:
     case '01':
         data = data.replace('/01/', '/Janeiro/')
